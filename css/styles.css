@@ -71,8 +71,8 @@ img {
 /* -------------------------------------------------- */
 /* -------------------HEADER------------------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -99,7 +99,7 @@ img {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 
 .header-logo-decor {
@@ -201,11 +201,28 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 10;
 }
+
+.menu-open-btn {
+  top: 16px;
+  right: 16px;
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  border-color: transparent;
+}
+
 .menu-close-btn {
   display: block;
   margin-left: auto;
-
   position: absolute;
   top: 24px;
   right: 24px;
@@ -388,20 +405,27 @@ img {
 
 .features {
   background-color: #fff;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
+
 .features-list {
+  /* display: flex;
+  gap: 24px; */
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+  width: 100%;
 }
 
 .features-icon-container {
-  display: flex;
+  /* display: flex;
   width: 264px;
   height: 112px;
   align-items: center;
@@ -410,16 +434,23 @@ img {
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background: #f4f4fd;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+  display: none;
 }
 
 .features-subtitle {
-  color: #2e2f42;
+  /* color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 .features-item-text {
   color: #434455;
@@ -623,19 +654,24 @@ img {
 /* ------------------FOOTER------------------- */
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  /* align-items: baseline; */
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .footer-main-container {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-link-decor {
@@ -658,6 +694,7 @@ img {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-text {
@@ -666,11 +703,12 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  /* max-width: 264px; */
+  width: 100%;
 }
 
 .footer-soc-container {
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 
 .footer-link-title {
@@ -680,6 +718,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-soc-list {
@@ -714,6 +753,11 @@ img {
   fill: #f4f4fd;
 }
 
+.footer-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-form-title {
   color: #fff;
   font-size: 16px;
@@ -721,6 +765,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+
+  text-align: center;
 }
 
 .footer-subscribe-input::placeholder {
@@ -763,6 +809,8 @@ img {
   border: none;
   cursor: pointer;
   display: flex;
+
+  gap: 16px;
   align-items: center;
   justify-content: center;
 
@@ -775,14 +823,17 @@ img {
 }
 
 .subscribe-icon {
-  margin-left: 16px;
+  /* margin-left: 24px; */
   fill: #ffffff;
 }
 
 .footer-submit-form {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 16px;
+  /* gap: 24px; */
 }
 
 /*---------------Modal---------------------*/
