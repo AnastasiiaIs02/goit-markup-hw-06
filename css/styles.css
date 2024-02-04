@@ -1078,38 +1078,3 @@ img {
   border: none;
   fill: #f4f4fd;
 }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 736px;
-  }
-
-  .portfolio-list {
-    gap: 72px 24px;
-  }
-
-  .portfolio-item {
-    width: calc((100% - 24px) / 2);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .portfolio-list {
-    gap: 48px 24px;
-  }
-
-  .portfolio-item {
-    width: calc((100% - 48px) / 3);
-  }
-}

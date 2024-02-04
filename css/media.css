@@ -142,12 +142,12 @@
   .footer-submit-form {
     gap: 24px;
   }
-}
 
-.modal {
-  padding: 72px 25px 24px 23px;
-  width: 408px;
-  height: 584px;
+  .modal {
+    padding: 72px 25px 24px 23px;
+    width: 408px;
+    height: 584px;
+  }
 }
 
 /*------------------------------------------------------*/
@@ -335,9 +335,9 @@
   .footer-link-title {
     margin-bottom: 16px;
   }
-}
 
-.modal {
-  padding: 72px 24px 24px 24px;
-  width: 408px;
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+  }
 }
